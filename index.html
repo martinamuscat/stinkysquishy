@@ -14,6 +14,7 @@
             align-items: center;
             height: 100vh;
             background: linear-gradient(to bottom, #FFB6C1, #FF69B4);
+            margin: 0; /* Remove default margin to ensure full screen use */
         }
         .heart {
             color: red;
@@ -25,7 +26,7 @@
             50% { transform: scale(1.2); }
             100% { transform: scale(1); }
         }
-       /* Styling for Lobster font */
+        /* Styling for Lobster font */
         .lobster-regular {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             font-family: "Lobster", serif;
@@ -34,10 +35,13 @@
             font-size: 80px;
             color: white;
             margin-top: 250px;
+            text-align: center; /* Center the text */
+        }
 
-            /* Move Spotify player to the bottom */
+        /* Move Spotify player to the bottom */
         iframe {
-            margin-top: 250px; /* Pushes the iframe to the bottom */
+            margin-top: auto; /* Pushes the iframe to the bottom */
+            border-radius: 12px;
         }
     </style>
 </head>
@@ -47,6 +51,6 @@
     <div class="heart">❤️</div>
 
     <!-- Add Spotify embed at the bottom -->
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3iBgrkexCzVuPy4O9vx7Mf?utm_source=generator&theme=0" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe src="https://open.spotify.com/embed/track/3iBgrkexCzVuPy4O9vx7Mf?utm_source=generator&theme=0" width="50%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </body>
 </html>
