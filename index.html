@@ -50,7 +50,13 @@
     <div class="lobster-regular">Happy Valentine's Day Stinky! I love you mostest x</div>
     <div class="heart">❤️</div>
 
+    <!-- Play Music Button -->
+    <button onclick="document.getElementById('spotify-iframe').contentWindow.postMessage('{"event":"command","func":"play"}','*');">
+        Play Music
+    </button>
+
     <!-- Add Spotify embed at the bottom -->
-    <iframe src="https://open.spotify.com/embed/track/3iBgrkexCzVuPy4O9vx7Mf?utm_source=generator&theme=0" width="50%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe id="spotify-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3iBgrkexCzVuPy4O9vx7Mf?utm_source=generator&theme=0" width="50%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+Explanation:
 </body>
 </html>
